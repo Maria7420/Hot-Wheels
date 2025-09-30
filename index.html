@@ -443,6 +443,15 @@
   </audio>
 
   <script>
+  // Cuando el usuario hace clic en cualquier parte, se activa el audio
+  document.addEventListener("click", function() {
+    const music = document.getElementById("bg-music");
+    music.muted = false;
+    music.play();
+  });
+</script>
+  
+  <script>
     // Pantalla de bienvenida
     function hideWelcome() {
       document.getElementById('welcome').style.display = 'none';
