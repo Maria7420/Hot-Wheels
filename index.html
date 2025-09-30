@@ -451,11 +451,14 @@
   });
 </script>
   
-  <script>
-    // Pantalla de bienvenida
-    function hideWelcome() {
-      document.getElementById('welcome').style.display = 'none';
-    }
+<script>
+  // Pantalla de bienvenida
+  function hideWelcome() {
+    document.getElementById('welcome').style.display = 'none';
+    const music = document.getElementById("bg-music");
+    music.muted = false;   // Activa sonido
+    music.play();          // Reproduce
+  }
 
     const frases = [
       "Cada mensaje tuyo me hace sentir que estás un poquito más cerca 🚗💙",
